@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+
+    android:background="#efb810"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+
+        android:id="@+id/black"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#000"
+        />
+
+    <ImageView
+        android:id="@+id/amazon"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/amazon"
+        />
+
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_below="@+id/amazon"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bordes_edit_text"
+        android:layout_marginTop="40dp"
+        android:hint="Username"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_below="@+id/et_user"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bordes_edit_text"
+        android:layout_marginTop="10dp"
+
+        android:hint="Password"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="40dp"
+        android:text="LOG IN"
+        android:textColor="#fff"
+        android:background="@drawable/bordes_button"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password?"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/forgot"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
